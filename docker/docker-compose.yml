@@ -1,0 +1,12 @@
+version: '3'
+services:
+  arm:
+    build:
+      context: ..
+      dockerfile: docker/arm/Dockerfile
+    image: jeguzzi/ros:armhf-kinetic-ros-keras
+  x86:
+    build:
+      context: ..
+      dockerfile: docker/x86/Dockerfile
+    image: jeguzzi/ros:kinetic-ros-keras

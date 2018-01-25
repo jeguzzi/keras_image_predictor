@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="keras_image_predictor" type="predictor_node.py" name="predictor_node" output="screen">
+        <param name="model" value="$(find keras_image_predictor)/launch/rgb.model" />
+    </node>
+</launch>
